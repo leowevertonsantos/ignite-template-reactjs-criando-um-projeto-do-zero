@@ -1,1 +1,56 @@
-// TODO
+.container {
+  max-width: var(--size-container-deafult);
+  margin: 0.5rem auto;
+
+  .post {
+    margin-bottom: 2.5rem;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        h1 {
+          color: var(--highlight);
+        }
+      }
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      color: var(--heading);
+
+      transition: color 0.5s;
+    }
+    p {
+      color: var(--body);
+      margin-top: 0.5rem;
+    }
+
+    .infoContent {
+      display: flex;
+      margin-top: 1rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        color: var(--info);
+        font-size: 0.875rem;
+        padding-right: 2rem;
+        line-height: 2rem;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .btnMore {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--highlight);
+
+    margin-top: 1rem;
+  }
+}
